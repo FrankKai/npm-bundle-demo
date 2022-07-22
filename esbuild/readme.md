@@ -1,0 +1,4 @@
+- dist
+  - index.cjs.js
+  - index.esm.js
+  - index.umd.js

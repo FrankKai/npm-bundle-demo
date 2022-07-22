@@ -1,0 +1,28 @@
+{
+  "name": "rollup-lib",
+  "version": "0.0.2",
+  "main": "dist/rollup-lib.cjs.js",
+  "module": "dist/rollup-lib.esm.js",
+  "browser": "dist/rollup-lib.umd.js",
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0"
+  },
+  "maintainers": [
+    {
+      "name": "FrankKai",
+      "email": "gaokai20100801@gmai.com"
+    }
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.29.0"
+  },
+  "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "files": [
+    "dist"
+  ]
+}

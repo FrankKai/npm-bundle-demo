@@ -1,0 +1,19 @@
+{
+  "name": "esbuild-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "esbuild:cjs": "esbuild ./src/index.js --bundle --outfile=dist/index.cjs.js --format=cjs",
+    "esbuild:esm": "esbuild ./src/index.js --bundle --outfile=dist/index.esm.js --format=esm",
+    "build": "npm run esbuild:cjs && npm run esbuild:esm"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.14.49"
+  },
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0"
+  }
+}

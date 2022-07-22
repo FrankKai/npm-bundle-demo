@@ -1,0 +1,4 @@
+- dist
+  - rollup-lib.cjs.js
+  - rollup-lib.esm.js
+  - rollup-lib.umd.js
